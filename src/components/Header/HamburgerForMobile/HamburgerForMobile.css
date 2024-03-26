@@ -1,0 +1,36 @@
+.HamburgerForMobile {
+    width: 5vw;
+}
+
+.divMenu,
+.loginSignupDiv,
+.LightModeDiv {
+    left: 0vw;
+    top: 7.7vw;
+    width: 100vw;
+    position: absolute;
+    margin-top: 10vw;
+}
+
+.menuLight {
+    border-bottom: 1px solid rgba(117, 114, 114, 0.596);
+}
+
+.menuDark {
+    border-bottom: 1px solid rgba(236, 233, 233, 0.541);
+}
+
+@media (min-width:768px) {
+    .HamburgerForMobile {
+        display: none;
+    }
+
+    .divMenu,
+    .loginSignupDiv,
+    .LightModeDiv {
+        top: 0vw;
+        width: auto;
+        margin-top: 0;
+        position: static;
+    }
+}

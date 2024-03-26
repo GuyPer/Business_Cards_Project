@@ -1,0 +1,200 @@
+.Home {
+    display: flex;
+    width: 90vw;
+    margin-top: 15vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .liked {
+        color: rgb(233, 3, 3);
+    }
+
+    .light {
+        border: none;
+        box-shadow: none;
+        color: black
+    }
+
+    .dark {
+        border: none;
+        box-shadow: none;
+        color: white;
+    }
+
+    .heartIcon {
+        margin-bottom: 2vw;
+    }
+
+    .divofCard {
+        height: 95vw;
+        width: 70vw;
+        margin-top: 15vw;
+        border-radius: 10px;
+    }
+
+    .title {
+        margin-top: 10vw;
+        text-decoration: underline;
+    }
+
+    p {
+        width: 80vw;
+        text-align: justify;
+    }
+
+    .subTitle {
+        width: 70vw;
+    }
+
+    .cardsContainer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100vw;
+    }
+
+    .divofCardLight {
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        border: 1px solid #696666d2;
+    }
+
+    .divofCardDark {
+        box-shadow: rgb(255, 255, 255, 0.25) 0px 54px 55px, rgb(255, 255, 255, 0.12) 0px -12px 30px, rgba(255, 255, 255, 0.12) 0px 4px 6px, rgba(255, 254, 254, 0.17) 0px 12px 13px, rgb(255, 255, 255, 0.09) 0px -3px 5px;
+        border: 1px solid #f6f1f134;
+    }
+
+    .cardImage {
+        width: 69.7vw;
+        height: 40vw;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+    }
+
+    .cardTitle,
+    .cardDescription {
+        padding: 1vw;
+    }
+
+    .cardTitle,
+    .cardDescription,
+    .cardAddress {
+        max-width: 70vw;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+
+    .cardDescription,
+    .cardPhone,
+    .cardAddress {
+        max-width: 60vw;
+        margin-left: 5vw;
+    }
+
+    .adminIcons {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 2vw;
+    }
+
+    .leftIcons {
+        margin-left: 2vw;
+    }
+
+    .rightIcons {
+        margin-left: 40%;
+        margin-right: 2vw;
+    }
+
+    .editIcon {
+        margin-left: 1vw;
+    }
+
+    .phoneIcon {
+        margin-right: 1vw;
+    }
+
+    .cardIconsDiv {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        padding-bottom: 7vw;
+    }
+
+    .textError,
+    .textLoading {
+        margin-top: 2vw;
+        text-align: center;
+    }
+
+    .errorDiv,
+    .LoadingDiv {
+        width: 100vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    @media (min-width:768px) {
+
+        .title {
+            margin-top: 5vw;
+        }
+
+        .cardsContainer {
+            gap: 2vw;
+        }
+
+        .divofCard {
+            margin-top: 10vw;
+            width: 28vw;
+            height: 49vw;
+        }
+
+        .cardImage {
+            width: 27.7vw;
+            height: 20vw;
+        }
+
+        .cardDescription,
+        .cardPhone,
+        .cardAddress {
+            max-width: 20vw;
+            margin-left: 2vw;
+        }
+    }
+
+    @media (min-width:992px) {
+        padding-bottom: 0vw;
+
+        .removeBtn {
+            height: 2.5vw;
+        }
+
+
+        .cardImage {
+            width: 24.7vw;
+            height: 17vw;
+        }
+
+        .divofCard {
+            margin-top: 5vw;
+            width: 25vw;
+            height: 41vw;
+        }
+
+        .title {
+            margin-top: 0vw;
+        }
+
+        .cardIconsDiv {
+            padding-top: 0.7vw;
+        }
+    }
+}

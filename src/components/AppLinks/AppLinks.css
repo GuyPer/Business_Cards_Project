@@ -1,0 +1,9 @@
+.AppLinks {
+    .lightMode {
+        color: black;
+    }
+
+    .darkMode {
+        color: white;
+    }
+}

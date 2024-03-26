@@ -1,0 +1,163 @@
+.FavoriteCards {
+    display: flex;
+    width: 90vw;
+    margin-top: 15vw;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .pNoFavCards {
+        margin-top: 5vw;
+        font-weight: 500;
+    }
+
+    .title {
+        margin-top: 10vw;
+        text-decoration: underline;
+    }
+
+    .cardsContainer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100vw;
+    }
+
+    .divofCard {
+        width: 70vw;
+        margin-top: 15vw;
+        border-radius: 10px;
+    }
+
+    .divofCardLight {
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        border: 1px solid #696666d2;
+    }
+
+    .divofCardDark {
+        box-shadow: rgb(255, 255, 255, 0.25) 0px 54px 55px, rgb(255, 255, 255, 0.12) 0px -12px 30px, rgba(255, 255, 255, 0.12) 0px 4px 6px, rgba(255, 254, 254, 0.17) 0px 12px 13px, rgb(255, 255, 255, 0.09) 0px -3px 5px;
+        border: 1px solid #f6f1f134;
+    }
+
+    .removeBtn {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 3vw;
+    }
+
+    .cardImage {
+        width: 69.7vw;
+        height: 40vw;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+    }
+
+    .cardTitle,
+    .cardDescription {
+        padding: 1vw;
+    }
+
+    .cardTitle,
+    .cardDescription,
+    .cardAddress {
+        max-width: 70vw;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+
+    .cardDescription,
+    .cardPhone,
+    .cardAddress {
+        max-width: 60vw;
+        margin-left: 5vw;
+    }
+
+    @media (min-width:768px) {
+
+        padding-top: 0vw;
+        margin-top: 7.5vw;
+        padding-bottom: 15vw;
+
+        .title {
+            padding-top: 0vw;
+        }
+
+        .cardsContainer {
+            gap: 2vw;
+        }
+
+        .divofCard {
+            margin-top: 10vw;
+            width: 28vw;
+            height: 50vw;
+        }
+
+        .cardImage {
+            width: 27.7vw;
+            height: 20vw;
+        }
+
+        .cardDescription,
+        .cardPhone,
+        .cardAddress {
+            max-width: 20vw;
+            margin-left: 2vw;
+        }
+    }
+
+    @media (min-width:992px) {
+        padding-bottom: 0vw;
+
+        .removeBtn {
+            height: 2.5vw;
+        }
+
+        .cardImage {
+            width: 24.7vw;
+            height: 17vw;
+        }
+
+        .divofCard {
+            margin-top: 5vw;
+            width: 25vw;
+            height: 41vw;
+        }
+
+        .title {
+            margin-top: 7vw;
+        }
+    }
+}
+
+/* No Favorite Cards */
+.Empty {
+    height: 0vw;
+    margin-top: 0vw;
+    padding-bottom: 45vw;
+
+    @media (min-width:768px) {
+
+        .title {
+            font-size: 2.5rem;
+        }
+
+        .pNoFavCards {
+            font-size: 1.5rem;
+            margin-top: 5vw;
+            font-weight: 500;
+        }
+    }
+
+    @media (min-width:992px) {
+        padding-bottom: 10vw;
+
+        .title {
+            font-size: 2rem;
+        }
+
+        .pNoFavCards {
+            font-size: 1.2rem;
+        }
+    }
+}

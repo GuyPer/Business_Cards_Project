@@ -1,0 +1,257 @@
+.light {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+        rgba(0, 0, 0, 0.12) 0px -12px 30px,
+        rgba(0, 0, 0, 0.12) 0px 4px 6px,
+        rgba(0, 0, 0, 0.17) 0px 12px 13px,
+        rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    /* border: 1px solid #696666d2; */
+}
+
+.dark {
+    box-shadow: rgba(255, 255, 255, 0.062) 0px 54px 55px, rgba(255, 255, 255, 0.062) 0px -12px 30px, rgba(255, 255, 255, 0.075) 0px 4px 6px, rgba(255, 254, 254, 0.11) 0px 12px 13px, rgb(255, 255, 255, 0.09) 0px -3px 5px;
+    /* border: 1px solid #f6f1f115; */
+}
+
+.User {
+    border-radius: 10px;
+    /* height: 50vw; */
+    width: 90vw;
+    margin-top: 15vw;
+
+    .userDetailsDiv {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .title {
+        font-weight: 700;
+        margin-top: 10vw;
+        text-decoration: underline;
+    }
+
+    .userDetails {
+        width: 75vw;
+        margin-top: 5vw;
+        padding-left: 15vw;
+        padding-right: 5vw;
+    }
+
+    .name,
+    .phone,
+    .email,
+    .userAddress {
+        font-weight: 500;
+        overflow: hidden
+    }
+
+    .userImageDiv {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .userImage {
+        margin-top: 5vw;
+        width: 15vw;
+        height: 15vw;
+        border-radius: 30px;
+    }
+
+    .userImageDark {
+        background-color: #fff;
+    }
+
+    .userAddress {
+        margin-top: 3vw;
+    }
+
+    .adminAcount,
+    .businessAcount {
+        margin-top: 5vw;
+    }
+
+    .adminAcount {
+        font-weight: 700;
+        color: gold;
+    }
+
+    .businessAcount {
+        color: rgb(16, 170, 24);
+    }
+
+    .profileBtn {
+        margin-top: 5vw;
+    }
+
+    .logOutBtn {
+        margin-top: 1vw;
+        margin-bottom: 4vw;
+        width: 20vw;
+        align-items: center;
+    }
+
+    .userDetails {
+        text-align: justify;
+    }
+
+    .profileBtn,
+    .logOutBtn {
+        width: 24vw;
+    }
+
+    .deletUserButton {
+        margin-bottom: 10vw;
+    }
+
+    @media(min-width:768px) {
+        width: 75vw;
+        margin-top: 20vw;
+
+        .title {
+            font-size: 2.2rem;
+            font-weight: 700;
+            margin-top: 10vw;
+            text-decoration: underline;
+        }
+
+        .name,
+        .phone,
+        .email,
+        .userAddress,
+        .adminAcount,
+        .businessAcount,
+        .profileBtn,
+        .logOutBtn,
+        .deletUserButton {
+            font-size: 1.7rem;
+            font-weight: 500;
+            overflow: hidden
+        }
+
+        .profileBtn,
+        .logOutBtn,
+        .deletUserButton {
+            width: 22vw;
+            border-radius: 15px;
+            align-items: center;
+            font-size: 1.4rem;
+            height: 5.8vw;
+        }
+
+        .logOutBtn {
+            margin-bottom: 8vw;
+            padding-bottom: 1.5vw;
+        }
+
+        .deletUserButton {
+            width: 30vw;
+        }
+
+        .userImage {
+            margin-top: 5vw;
+            width: 13vw;
+            height: 13vw;
+            border-radius: 50px;
+        }
+    }
+
+    @media(min-width:992px) {
+        border-radius: 20px;
+        width: 52vw;
+        margin-top: 15vw;
+
+        .title {
+            margin-top: 5vw;
+        }
+
+        .userDetails {
+            margin-top: 3vw;
+            width: 55vw;
+        }
+
+        .profileBtn,
+        .logOutBtn,
+        .deletUserButton {
+            border-radius: 15px;
+            align-items: center;
+            font-size: 1.45rem;
+            height: 4vw;
+            width: 15vw;
+        }
+
+        .logOutBtn {
+            padding-bottom: .5vw;
+            margin-bottom: 5vw;
+        }
+
+        .deletUserButton {
+            width: 20vw;
+        }
+
+        .userImage {
+            margin-top: 2vw;
+            width: 10vw;
+            height: 10vw;
+            border-radius: 50px;
+        }
+    }
+}
+
+/* LOG OUT AREA */
+.loggedOut {
+
+    margin-top: none;
+    width: 70vw;
+    margin-bottom: 30vw;
+
+    .loggedOutHeader {
+        padding-top: 10vw;
+        margin-bottom: 5vw;
+        font-size: 1rem;
+    }
+
+    .loggedOutDiv {
+        margin-top: 10vw;
+    }
+
+    .AppButton {
+        padding-bottom: 5vw;
+    }
+
+    @media(min-width:768px) {
+        padding: 5vw;
+        margin-bottom: 15vw;
+        width: 55vw;
+
+        .loggedOutHeader {
+            padding-top: 0vw;
+            margin-bottom: 5vw;
+            font-size: 1.5rem;
+        }
+
+        .loggedOutDiv {
+            margin-top: 3vw;
+        }
+
+        .AppButton {
+            padding-bottom: 0vw;
+        }
+    }
+
+    @media(min-width:992px) {
+        height: 30vw;
+        width: 52vw;
+        margin-bottom: 5vw;
+
+        .loggedOutHeader {
+            margin-bottom: 5vw;
+            font-size: 2rem;
+        }
+
+        .loggedOutDiv {
+            margin-top: 3vw;
+        }
+    }
+}

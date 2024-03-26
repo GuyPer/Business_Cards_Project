@@ -1,0 +1,75 @@
+.Login {
+    height: 25vh;
+    margin-bottom: 10vw;
+    width: 60vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+
+    .divBtn {
+        display: flex;
+        justify-content: center;
+        margin-top: 3vw;
+    }
+
+    .form {
+        margin-top: 10vw;
+    }
+
+    .inputs {
+        margin-top: 5vw;
+        margin-top: 1vw;
+        width: 40vw;
+        border-radius: 5px;
+    }
+
+    .btn {
+        width: 17vw;
+    }
+
+    .errorP {
+        margin-top: -8vw;
+    }
+
+    @media (min-width:768px) {
+        width: 50vw;
+        height: 30vw;
+
+        .form {
+            margin-top: 10vw;
+        }
+
+        .inputs {
+            width: 25vw;
+        }
+
+        .btn {
+            width: 12vw;
+        }
+    }
+
+    @media(min-width:992px) {
+        margin-bottom: 0vw;
+        margin-top: 5vw;
+        width: 30vw;
+        height: 22vw;
+
+        .errorP {
+            margin-top: 0vw;
+        }
+
+        .form {
+            margin-top: 0vw;
+        }
+
+        .inputs {
+            width: 20vw;
+        }
+
+        .btn {
+            width: 7vw;
+        }
+    }
+}

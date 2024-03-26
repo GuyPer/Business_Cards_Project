@@ -1,0 +1,146 @@
+.EditUser {
+    margin-top: 25vw;
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+
+    .registerHeader {
+        margin-top: 12vw;
+        margin-bottom: 7vw;
+        text-decoration: underline;
+    }
+
+    .form-group {
+        margin-bottom: 10px;
+    }
+
+    label {
+        width: 100px;
+        text-align: left;
+        margin-right: 10px;
+    }
+
+    .inputClass {
+        width: 35vw;
+        border-radius: 5px;
+    }
+
+    .SubmitBtn {
+        margin-top: 7vw;
+        width: 20vw;
+        margin-bottom: 7vw;
+    }
+
+    .notValidInput {
+        border: 1px solid red;
+    }
+
+    .passwordInvalidMessage,
+    .phoneInvalidMessage,
+    .emailInvalidMessage,
+    .imageInvalidMessage {
+        width: 40vw;
+        margin-left: 30vw;
+        font-size: 0.7rem;
+        color: red;
+    }
+
+    .checkboxDiv {
+        display: flex;
+        flex-direction: row;
+        width: 60vw;
+        margin-top: 8vw;
+    }
+
+    .pBusiness,
+    .pAdmin {
+        margin-bottom: 0vw;
+    }
+
+    @media (min-width:768px) {
+        margin-top: 22vw;
+        margin-bottom: 10vw;
+        width: 70vw;
+
+        .registerHeader {
+            margin-top: 8vw;
+        }
+
+        .passwordInvalidMessage,
+        .phoneInvalidMessage,
+        .emailInvalidMessage,
+        .imageInvalidMessage {
+            width: 25vw;
+            margin-left: 30vw;
+            font-size: 0.8rem;
+        }
+
+        .form-group {
+            margin-top: 2.2vw;
+        }
+
+        .formLabel {
+            margin-right: 3vw;
+            font-size: 1.2rem;
+            width: 20vw;
+        }
+
+        .inputClass {
+            width: 25vw;
+        }
+
+        .checkboxDiv {
+            padding-left: 5vw;
+            width: 60vw;
+            height: 4vw;
+            font-size: 1.2rem;
+        }
+
+        .SubmitBtn {
+            margin-top: 5vw;
+            width: 12vw;
+        }
+    }
+
+    @media (min-width:992px) {
+        margin-top: 15vw;
+        margin-bottom: 10vw;
+        width: 60vw;
+
+        .passwordInvalidMessage,
+        .phoneInvalidMessage,
+        .emailInvalidMessage,
+        .imageInvalidMessage {
+            width: 18vw;
+            margin-left: 20vw;
+            font-size: 0.8rem;
+        }
+
+        .checkboxDiv {
+            padding-left: 10vw;
+        }
+
+        .formLabel {
+            margin-right: 0vw;
+            font-size: 1rem;
+            width: 20vw;
+        }
+
+        .form-group {
+            margin-top: 1vw;
+        }
+
+        .inputClass {
+            width: 20vw;
+        }
+
+        .SubmitBtn {
+            margin-top: 2vw;
+            margin-bottom: 5vw;
+            width: 8vw;
+        }
+    }
+}

@@ -1,0 +1,70 @@
+.LoginSignup {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    .LoginSignupDiv,
+    .loggedInDiv {
+        margin-top: 2vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 2vw;
+    }
+
+    .loginBtn {
+        padding-top: 1.8vw;
+        height: 6.5vw;
+    }
+
+    .signupBtn {
+        padding-top: 1.8vw;
+        height: 6.5vw;
+    }
+
+    .logOutBtn {
+        color: rgba(212, 4, 4, 0.801);
+        background-color: #c2aeae65;
+    }
+
+
+    @media (min-width:768px) {
+        margin-top: 0vw;
+        .LoginSignupDiv {
+            margin-top: 0vw;
+            gap: 1vw;
+        }
+
+        .loginBtn {
+            height: 3.5vw;
+            padding-top: 1.2vw;
+        }
+
+        .signupBtn {
+            height: 3.5vw;
+            padding-top: 1.2vw;
+            margin-right: 1vw;
+        }
+    }
+
+    @media(min-width:992px) {
+
+        .loginBtn,
+        .signupBtn {
+            font-size: .75rem;
+            height: 2.8vw;
+            width: 5.5vw;
+            margin-top: 0vw;
+            padding-top: 0.8vw;
+        }
+
+        .LoginSignupDiv,
+        .loggedInDiv {
+            margin-top: 0;
+            gap: 0.5vw;
+        }
+    }
+}

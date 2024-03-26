@@ -1,0 +1,92 @@
+.Admin {
+    margin: 0 auto;
+    margin-top: 25vw;
+
+    .title,
+    .subtitle {
+        text-decoration: underline;
+    }
+
+    usersDiv {
+        text-align: left;
+    }
+
+    .users,
+    .usersTitles {
+        height: 15vw;
+        align-items: center;
+        padding-left: 0;
+        display: flex;
+        flex-direction: row;
+        text-align: left;
+        margin: 0;
+        gap: 5vw;
+    }
+
+    .usersTitles {
+        text-decoration: underline;
+        height: 0vw;
+        margin-top: 12vw;
+    }
+
+    .usersLight {
+        border-bottom: 1px solid black;
+    }
+
+    .usersDark {
+        border-bottom: 1px solid rgb(255, 255, 255);
+    }
+
+    li {
+        list-style-type: none;
+    }
+
+    .editDeleteBtns {
+        display: flex;
+        flex-direction: row;
+        gap: 1vw;
+    }
+
+    .userName {
+        width: 25vw;
+        flex-wrap: nowrap;
+        overflow: hidden;
+        margin-right: 3vw;
+    }
+
+    .isUserBusiness,
+    .isUserAdmin {
+        text-align: left;
+        max-width: 15vw;
+        flex-wrap: nowrap;
+    }
+
+    .isUserAdmin {
+        margin-left: 7vw;
+    }
+
+    .isUserBusinesstitle {
+        margin-left: 10vw;
+    }
+
+    .noUsersDiv {
+        margin-top: 10vw;
+    }
+
+    @media(min-width:768px) {
+        margin-top: 20vw;
+        font-size: 1.5rem;
+
+        .isUserBusinesstitle {
+            margin-left: 15vw;
+        }
+    }
+
+    @media(min-width:992px) {
+        margin-top: 15vw;
+
+        .isUserBusinesstitle {
+            margin-left: 20vw;
+        }
+    }
+}

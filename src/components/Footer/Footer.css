@@ -1,0 +1,208 @@
+.Footer {
+    width: 100vw;
+    position: absolute;
+    left: 0;
+    margin-top: 20vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid rgb(207, 205, 205);
+
+    .dark {
+        background-color: black;
+        border-top: 1vw solid rgba(138, 135, 135, 0.285);
+    }
+
+    .light {
+        background-color: white;
+        border-top: 1vw solid rgba(138, 135, 135, 0.233);
+    }
+
+    .footer {
+        position: relative;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .AboutUs,
+    .quickLinks,
+    .socialMedia,
+    .contactUs {
+        margin-top: 7vw;
+        width: 85vw;
+    }
+
+    .contactUsHeader {
+        margin-top: 5vw;
+    }
+
+    .contactUs {
+        margin-bottom: 10vw;
+        width: 80vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contactUsLight {
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        border: 1px solid #4d4b4bc0;
+    }
+
+    .contactUsDark {
+        box-shadow: rgb(255, 255, 255, 0.25) 0px 54px 55px, rgb(255, 255, 255, 0.12) 0px -12px 30px, rgba(255, 255, 255, 0.12) 0px 4px 6px, rgba(255, 254, 254, 0.17) 0px 12px 13px, rgb(255, 255, 255, 0.09) 0px -3px 5px;
+        border: 1px solid #f6f1f1c0;
+    }
+
+    .AboutUs {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .pAboutUs,
+    .copyrights {
+        width: 70vw;
+        margin-top: 1vw;
+        text-align: justify
+    }
+
+    .copyrights {
+        font-size: 0.8rem;
+    }
+
+    .quickLinks {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footerLinks {
+        font-weight: normal;
+        text-decoration: none;
+    }
+
+    .myPersonalLogos {
+        margin-left: 1vw;
+        width: 5vw;
+        height: 5vw;
+    }
+
+    .copyrights {
+        width: 70vw;
+    }
+
+    @media(min-width:768px) {
+        margin-top: 10vw;
+
+        .dark {
+            background-color: black;
+            border-top: 0.5vw solid rgba(138, 135, 135, 0.285);
+        }
+
+        .light {
+            background-color: white;
+            border-top: 0.5vw solid rgba(138, 135, 135, 0.233);
+        }
+
+        .footerHeaders {
+            font-size: 2rem;
+        }
+
+        .pAboutUs,
+        .footerLinks {
+            font-size: 1.5rem;
+        }
+
+        .contactUs {
+            box-shadow: none;
+            border: 0.5px solid silver;
+        }
+    }
+
+    @media(min-width:992px) {
+
+        .footerHeaders {
+            font-size: 1.3rem;
+        }
+
+        .pAboutUs,
+        .footerLinks {
+            font-size: 1rem;
+        }
+
+        .copyrights {
+            font-size: 0.8rem;
+        }
+
+        .footer {
+            width: 100vw;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+
+        .footer,
+        .AboutUs,
+        .quickLinks,
+        .socialMedia,
+        .contactUs {
+            margin: 0;
+        }
+
+        .AboutUs,
+        .quickLinks,
+        .socialMedia {
+            margin-top: 2vw;
+        }
+
+        .AboutUs,
+        .aboutUsHeader {
+            width: 15vw;
+            text-align: left;
+        }
+
+        .homeFooterLink,
+        .socialMediaLogos {
+            margin-top: 2vw;
+        }
+
+        .pAboutUs,
+        .copyrights {
+            width: 15vw;
+        }
+
+        .quickLinks {
+            width: 10vw;
+            position: relative;
+        }
+
+        .socialMedia {
+            width: 20vw;
+            position: relative;
+        }
+
+        .contactUs {
+            border-top: 1vw;
+            width: 25vw;
+        }
+
+        .contactUsHeader {
+            margin-top: 2vw;
+        }
+
+        .myPersonalLogos {
+            width: 2vw;
+            height: 2vw;
+        }
+
+        .AboutUs {
+            margin-left: 7vw;
+        }
+    }
+}

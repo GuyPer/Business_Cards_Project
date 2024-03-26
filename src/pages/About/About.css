@@ -1,0 +1,42 @@
+.About {
+    margin-top: 25vw;
+    width: 80vw;
+    text-align: justify;
+
+    h1,
+    h2 {
+        text-align: center;
+        text-decoration: underline;
+    }
+
+    h2 {
+        margin-top: 8vw;
+    }
+
+    li,
+    ul {
+        padding-left: 0;
+        margin-left: 0;
+        width: 80vw;
+        list-style: none;
+        text-align: justify;
+        margin-top: 5vw;
+    }
+
+    @media (min-width:768px) {
+        margin-top: 22vw;
+        font-size: 1.35rem;
+
+        h2 {
+            margin-top: 7vw;
+        }
+    }
+
+    @media (min-width:992px) {
+        margin-top: 15vw;
+
+        li {
+            font-size: 1.5rem;
+        }
+    }
+}

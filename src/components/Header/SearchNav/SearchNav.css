@@ -1,0 +1,53 @@
+.SearchNav {
+
+    margin-top: 2vw;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 2vw;
+
+    .searchInput {
+        width: 30vw;
+        border-radius: 8px;
+        margin-right: 0.5vw;
+        height: 6.5vw;
+    }
+
+    .searchBtn {
+        height: 6.5vw;
+    }
+
+    @media (min-width:768px) {
+
+        margin-left: 5vw;
+        margin-right: 5vw;
+        margin-bottom: 0vw;
+        margin-top: 2.2vw;
+
+        .searchInput {
+            height: 3.5vw;
+            width: 18vw;
+        }
+
+        .searchBtn {
+            height: 3.5vw;
+        }
+    }
+
+    @media (min-width:992px) {
+        margin-top: 1.8vw;
+
+        .searchBtn {
+            margin-top: 0.3vw;
+            font-size: .8rem;
+            height: 2.8vw;
+            width: 5.5vw;
+        }
+
+        .searchInput {
+            width: 25vw;
+            margin-top: 0.3vw;
+            font-size: .8rem;
+            height: 2.8vw;
+        }
+    }
+}

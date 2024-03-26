@@ -1,0 +1,153 @@
+.cardDetailsLight {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    border-radius: 10px;
+}
+
+.cardDetailsDark {
+    box-shadow: rgb(255, 255, 255, 0.25) 0px 54px 55px, rgb(255, 255, 255, 0.12) 0px -12px 30px, rgba(255, 255, 255, 0.12) 0px 4px 6px, rgba(255, 254, 254, 0.17) 0px 12px 13px, rgb(255, 255, 255, 0.09) 0px -3px 5px;
+    border: 1px solid #f6f1f134;
+}
+
+.liked {
+    color: rgb(233, 3, 3);
+}
+
+.CardDetails {
+    margin-top: 20vw;
+    width: 80vw;
+    background-color: #2403dd13;
+    border-radius: 10px;
+
+    .light {
+        border: none;
+        box-shadow: none;
+        color: black
+    }
+
+    .dark {
+        border: none;
+        box-shadow: none;
+        color: white;
+    }
+
+    .aboveImg {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .title {
+        padding-top: 5vw;
+        text-decoration: underline;
+    }
+
+    .belowImg {
+        text-align: left;
+        padding-left: 4vw;
+        padding-bottom: 3vw;
+        padding-top: 5vw;
+    }
+
+    .description {
+        padding-top: 1vw;
+    }
+
+    .title,
+    .subtitle,
+    .image,
+    .description,
+    .web,
+    .phone,
+    .email,
+    .address {
+        max-width: 70vw;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .description,
+    .web,
+    .phone,
+    .email,
+    .address {
+        font-size: 1rem;
+        max-width: 70vw;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+
+    .description {
+        white-space: nowrap;
+    }
+
+    .image {
+        max-width: 80vw;
+        max-height: 70vw;
+    }
+
+    .divofCard {
+        height: 95vw;
+        width: 70vw;
+        margin-top: 15vw;
+        border-radius: 10px;
+    }
+
+    .cardIconsDiv {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        padding-bottom: 7vw;
+    }
+
+    .editIcon {
+        margin-left: 1vw;
+    }
+
+    @media (min-width:768px) {
+        border-radius: 20px;
+        width: 65vw;
+
+        .image {
+            width: 64.8vw;
+            max-height: 35vw;
+        }
+
+        .description,
+        .web,
+        .phone,
+        .email,
+        .address {
+            font-size: 1.5rem;
+        }
+
+        .cardIconsDiv {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            padding-bottom: 3vw;
+        }
+    }
+
+    @media (min-width:992px) {
+        border-radius: 20px;
+        width: 52vw;
+        height: 70vw;
+
+        .image {
+            width: 51.8vw;
+            max-height: 25vw;
+        }
+
+        .cardIconsDiv {
+            padding-top: 1vw;
+        }
+
+        .belowImg {
+            padding-top: 1vw;
+        }
+    }
+}
