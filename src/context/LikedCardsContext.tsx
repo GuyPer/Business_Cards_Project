@@ -19,6 +19,12 @@ export default function LikedCardsProvider({ children }: { children: React.React
         initializeLikedArray();
     }, [userId]);
 
+    useEffect(() => {
+        if (userId !== null) {
+            localStorage.setItem(`${userId}`, JSON.stringify(likedCardsArray));
+        }
+    }, [likedCardsArray, userId]);
+
     const likedCards = (id: string) => {
         setLikedCardsArray(prevLikedCardsArray => {
             const updatedArray = prevLikedCardsArray.includes(id)
@@ -26,6 +32,9 @@ export default function LikedCardsProvider({ children }: { children: React.React
                 : [...prevLikedCardsArray, id];
 
             localStorage.setItem("likedCardsArray", JSON.stringify(updatedArray));
+            if (!localStorage.getItem(`${userId}`)) {
+                localStorage.setItem(`${userId}`, JSON.stringify(updatedArray));
+            }
             if (userId !== null) {
                 localStorage.setItem(`${userId}`, JSON.stringify(updatedArray));
             }
